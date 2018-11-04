@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      form{
+        width: 105px;
+        font-weight: bold;
+      }
+      #target {
+        margin-left: 16px;
+      }
+      span {
+        margin-right: 10px;
+      }
+      input {
+        width: 100px;
+        height: 20px;
+        font-weight: bold;
+      }
+
+/*      select {
+        -webkit-appearance: button;
+        border: none;
+        font-size: 13px;
+        list-style: none;
+        outline: none;
+        overflow: hidden;
+        text-align: left;
+        text-decoration: none;
+        vertical-align: middle;
+      }*/
+    </style>
+  </head>
+  <body>
+    <form>
+      <div>
+        <span>From:</span>
+        <select id="base" name="base">
+          <option value="USD">USD</option>
+          <option value="EUR">EUR</option>
+          <option value="AUD">AUD</option>
+          <option value="CAD">CAD</option>
+          <option value="CNY">CNY</option>
+          <option value="GBP">GBP</option>
+          <option value="JPY">JPY</option>
+        </select>
+      </div>
+      <div>
+        <span>To:</span>
+        <select id="target" name="target">
+          <option value="USD">USD</option>
+          <option value="EUR">EUR</option>
+          <option value="AUD">AUD</option>
+          <option value="CAD">CAD</option>
+          <option value="CNY">CNY</option>
+          <option value="GBP">GBP</option>
+          <option value="JPY">JPY</option>
+        </select>
+      </div>
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+  <script src="popup.js"></script>
+</html>

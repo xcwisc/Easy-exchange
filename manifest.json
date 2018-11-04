@@ -1,0 +1,23 @@
+{
+  "name": "Easy-exchange",
+  "version": "1.0",
+  "description": "A chrome extension that make currency exchange calculation easily!",
+  "permissions": ["storage", "declarativeContent", "tabs", "*://*/*"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "commands": {
+    "toggle": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Y",
+        "mac": "Command+Shift+Y"
+      },
+      "description": "Toggle feature"
+    }
+  },
+  "manifest_version": 2
+}
